@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photobooth for Friends ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Press+Start+2P&family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #fff8f3;
+      --card-bg: rgba(255, 255, 255, 0.92);
+      --text-main: #4a3540;
+      --text-muted: #846a76;
+      --accent-pink: #ff7aa8;
+      --accent-pink-dark: #e65588;
+      --accent-mint: #7ee0c6;
+      --accent-yellow: #ffd966;
+      --border-soft: #f5d6e2;
+      --shadow-cute: 0 12px 30px rgba(173, 102, 134, 0.16);
+      --ring-glow: none;
+    }
+
+    body.night-mode {
+      --bg-base: #1b1528;
+      --card-bg: rgba(36, 28, 54, 0.92);
+      --text-main: #fdf4ff;
+      --text-muted: #cbb8db;
+      --border-soft: #4e3b6e;
+      --shadow-cute: 0 14px 36px rgba(0, 0, 0, 0.5);
+      --ring-glow: 0 0 0 6px rgba(255, 214, 232, 0.85), 0 0 38px 12px rgba(255, 138, 190, 0.65);
+    }
+
+    /* Room Backgrounds */
+    body.bg-gingham {
+      background-color: #fff6f9;
+      background-image:
+        linear-gradient(90deg, rgba(255, 182, 206, 0.25) 50%, transparent 50%),
+        linear-gradient(rgba(255, 182, 206, 0.25) 50%, transparent 50%);
+      background-size: 36px 36px;
+    }
+    body.night-mode.bg-gingham {
+      background-color: #1c1529;
+      background-image:
+        linear-gradient(90deg, rgba(255, 122, 168, 0.14) 50%, transparent 50%),
+        linear-gradient(rgba(255, 122, 168, 0.14) 50%, transparent 50%);
+    }
+
+    body.bg-polka {
+      background-color: #fff9f2;
+      background-image: radial-gradient(#ffb5ce 2.4px, transparent 2.4px), radial-gradient(#ffd97d 2.4px, #fff9f2 2.4px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+    body.night-mode.bg-polka {
+      background-color: #19162b;
+      background-image: radial-gradient(#ff7aa8 2px, transparent 2px), radial-gradient(#8be9fd 2px, #19162b 2px);
+    }
+
+    body.bg-twilight {
+      background: linear-gradient(135deg, #e7d8ff 0%, #ffd6e8 50%, #fff0d6 100%);
+    }
+    body.night-mode.bg-twilight {
+      background: radial-gradient(circle at top, #36255c 0%, #151024 75%);
+    }
+
+    body.bg-mint {
+      background-color: #f2fcf9;
+      background-image:
+        linear-gradient(45deg, rgba(126, 224, 198, 0.25) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(126, 224, 198, 0.25) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(126, 224, 198, 0.25) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(126, 224, 198, 0.25) 75%);
+      background-size: 32px 32px;
+      background-position: 0 0, 0 16px, 16px -16px, -16px 0;
+    }
+    body.night-mode.bg-mint {
+      background-color: #132426;
+    }
+
+    body.bg-peach {
+      background: linear-gradient(180deg, #ffe5d9 0%, #ffd7e4 100%);
+    }
+    body.night-mode.
